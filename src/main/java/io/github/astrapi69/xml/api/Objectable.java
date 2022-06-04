@@ -1,8 +1,8 @@
 /**
  * The MIT License
- *
- * Copyright (C) 2021 Asterios Raptis
- *
+ * <p>
+ * Copyright (C) 2015 Asterios Raptis
+ * <p>
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
  * "Software"), to deal in the Software without restriction, including
@@ -10,10 +10,10 @@
  * distribute, sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so, subject to
  * the following conditions:
- *
+ * <p>
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
- *
+ * <p>
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -22,8 +22,21 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69;
+package io.github.astrapi69.xml.api;
 
-public class InitialTemplate
+import lombok.NonNull;
+
+/**
+ * A class that implements this interface can transform an xml string or file to an object
+ */
+public interface Objectable
 {
+	/**
+	 * Transforms the given xml string to an object of type T
+	 *
+	 * @param xml
+	 *            the xml String
+	 * @return the object
+	 */
+	<T> T toObject(final @NonNull String xml);
 }
