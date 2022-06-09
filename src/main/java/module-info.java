@@ -1,0 +1,2 @@
+module xml.api.main {
+}
