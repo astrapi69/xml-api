@@ -25,8 +25,8 @@
 package io.github.astrapi69.xml.api;
 
 /**
- * A class that implements this interface marks the object that it can be transformed to an xml
- * string and from an xml String to an Object back.
+ * If a class implements the interface {@link Xmlable} have to implement the methods for
+ * transformation to a xml string and from a xml String to an Object back
  *
  * @param <T>
  *            the generic type

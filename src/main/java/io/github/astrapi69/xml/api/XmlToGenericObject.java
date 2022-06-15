@@ -27,9 +27,10 @@ package io.github.astrapi69.xml.api;
 import lombok.NonNull;
 
 /**
- * If a class implements the interface {@link XmlToObject} can transform a xml string to an object
+ * If a class implements the interface {@link XmlToGenericObject} can transform a xml string or file
+ * to an object without giving explicitly the class type of the return type
  */
-public interface XmlToObject
+public interface XmlToGenericObject
 {
 	/**
 	 * Transforms the given xml string to an Object of type T
@@ -38,9 +39,7 @@ public interface XmlToObject
 	 *            the generic type of the return type
 	 * @param xmlString
 	 *            the xml String
-	 * @param clazz
-	 *            the class from the object that will be returned
-	 * @return the Object
+	 * @return the Object.
 	 */
-	<T> T toObject(final @NonNull String xmlString, final @NonNull Class<T> clazz);
+	<T> T toObject(final @NonNull String xmlString);
 }

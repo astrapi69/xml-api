@@ -4,6 +4,9 @@
 Version 1.1-SNAPSHOT
 -------------
 
+ADDED:
+
+- new interface XmlToGenericObject for provide transformation from a xml string to an object without giving explicitly the class type of the return type
 
 
 Version 1

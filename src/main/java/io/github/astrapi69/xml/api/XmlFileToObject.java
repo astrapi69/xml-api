@@ -1,13 +1,16 @@
 package io.github.astrapi69.xml.api;
 
-import lombok.NonNull;
-
 import java.io.File;
 
+import lombok.NonNull;
+
+/**
+ * If a class implements the interface {@link XmlFileToObject} can transform a xml file to an object
+ */
 public interface XmlFileToObject
 {
 	/**
-	 * Transformes the given xml string to an Object of type T.
+	 * Transforms the given xml string to an Object of type T
 	 *
 	 * @param <T>
 	 *            the generic type of the return type
@@ -15,7 +18,7 @@ public interface XmlFileToObject
 	 *            the xml file
 	 * @param clazz
 	 *            the class from the object that will be returned
-	 * @return the Object.
+	 * @return the Object
 	 */
 	<T> T toObject(final @NonNull File xmlFile, final @NonNull Class<T> clazz);
 }

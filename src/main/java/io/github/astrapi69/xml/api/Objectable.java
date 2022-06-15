@@ -27,7 +27,8 @@ package io.github.astrapi69.xml.api;
 import lombok.NonNull;
 
 /**
- * A class that implements this interface can transform an xml string or file to an object
+ * If a class implements the interface {@link Objectable} have to implement the method for
+ * transformation to the generic object type
  */
 public interface Objectable
 {

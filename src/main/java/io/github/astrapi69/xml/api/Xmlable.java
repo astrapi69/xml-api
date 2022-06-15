@@ -25,15 +25,15 @@
 package io.github.astrapi69.xml.api;
 
 /**
- * A class that implements this interface marks the object that it can be transformed to an xml
- * string.
+ * If a class implements the interface {@link Xmlable} have to implement the method for
+ * transformation to a xml string
  */
 public interface Xmlable
 {
 	/**
-	 * Transform this object to xml String.
+	 * Transform this object to xml String
 	 *
-	 * @return this object as an xml String object.
+	 * @return this object as an xml String object
 	 */
 	String toXml();
 }
