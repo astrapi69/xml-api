@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.xml.api;
 
-import lombok.NonNull;
-
 import java.io.File;
+
+import lombok.NonNull;
 
 /**
  * The interface {@link ObjectToXmlFile} provides a single method for convert an object to a xml
