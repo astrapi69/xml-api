@@ -34,15 +34,15 @@ import lombok.NonNull;
 public interface XmlFileToObject
 {
 	/**
-	 * Transforms the given xml string to an Object of type T
+	 * Transforms the given xml {@link File} object to an object of the given class type
 	 *
 	 * @param <T>
-	 *            the generic type of the return type
+	 *            the generic type of the argument object class type
 	 * @param xmlFile
 	 *            the xml file
 	 * @param clazz
-	 *            the class from the object that will be returned
-	 * @return the Object
+	 *            the class from the class type of the object that will be returned
+	 * @return the object
 	 */
 	<T> T toObject(final @NonNull File xmlFile, final @NonNull Class<T> clazz);
 }

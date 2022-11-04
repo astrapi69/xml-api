@@ -22,24 +22,26 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69.xml.api;
-
-import lombok.NonNull;
+package io.github.astrapi69.xml.api.enumtype;
 
 /**
- * If a class implements the interface {@link Objectable} have to implement the method for
- * transformation to the generic object type
+ * The enum {@link Converter} holds framework names that can make xml transformations
  */
-public interface Objectable
+public enum Converter
 {
+
 	/**
-	 * Transforms the given xml string to an object of type T
-	 *
-	 * @param <T>
-	 *            the generic type of the return type
-	 * @param xml
-	 *            the xml String
-	 * @return the object
+	 * The enum field for the xStream framework
 	 */
-	<T> T toObject(final @NonNull String xml);
+	XSTREAM,
+
+	/**
+	 * The enum field for the jackson framework
+	 */
+	JACKSON,
+
+	/**
+	 * The enum field for the jaxb framework
+	 */
+	JAXB
 }

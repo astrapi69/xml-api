@@ -33,13 +33,13 @@ import lombok.NonNull;
 public interface XmlToGenericObject
 {
 	/**
-	 * Transforms the given xml string to an Object of type T
+	 * Transforms the given xml string to an object of type T
 	 *
 	 * @param <T>
 	 *            the generic type of the return type
 	 * @param xmlString
 	 *            the xml String
-	 * @return the Object.
+	 * @return the object
 	 */
 	<T> T toObject(final @NonNull String xmlString);
 }

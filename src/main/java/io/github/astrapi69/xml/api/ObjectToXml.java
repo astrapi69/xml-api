@@ -35,7 +35,7 @@ public interface ObjectToXml
 	 * Converts the given object to a xml string
 	 *
 	 * @param <T>
-	 *            the generic type of the return type
+	 *            the generic type of the argument object type
 	 * @param object
 	 *            the object to convert to xml
 	 * @return the xml string from the given object

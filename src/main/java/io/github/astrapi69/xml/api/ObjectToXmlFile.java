@@ -38,7 +38,7 @@ public interface ObjectToXmlFile
 	 * Converts the given object to a xml file
 	 *
 	 * @param <T>
-	 *            the generic type of the return type
+	 *            the generic type of the argument object type
 	 * @param object
 	 *            the object to convert to xml
 	 * @param file

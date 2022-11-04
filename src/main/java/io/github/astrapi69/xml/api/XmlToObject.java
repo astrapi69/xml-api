@@ -32,15 +32,15 @@ import lombok.NonNull;
 public interface XmlToObject
 {
 	/**
-	 * Transforms the given xml string to an Object of type T
+	 * Transforms the given xml {@link String} object to an object of the given class type
 	 *
 	 * @param <T>
-	 *            the generic type of the return type
+	 *            the generic type of the argument object class type
 	 * @param xmlString
-	 *            the xml String
+	 *            the xml as {@link String} object
 	 * @param clazz
 	 *            the class from the object that will be returned
-	 * @return the Object
+	 * @return the object
 	 */
 	<T> T toObject(final @NonNull String xmlString, final @NonNull Class<T> clazz);
 }

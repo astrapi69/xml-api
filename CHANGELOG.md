@@ -4,6 +4,17 @@
 Version 1.3-SNAPSHOT
 -------------
 
+ADDED:
+
+- new enum Converter that provides framework names that can make xml transformations
+
+CHANGED:
+
+- update of gradle to new version 7.6-rc-1
+- update of gradle-plugin dependency of 'io.freefair.gradle:lombok-plugin' in version 6.5.1
+- update of gradle-plugin dependency of 'com.diffplug.spotless:spotless-plugin-gradle' in version 6.11.0
+- removed all unused test dependencies
+
 Version 1.2
 -------------
 
