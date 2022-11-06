@@ -7,6 +7,7 @@ Version 1.3-SNAPSHOT
 ADDED:
 
 - new enum Converter that provides framework names that can make xml transformations
+- new package-info files for package documentation
 
 CHANGED:
 
