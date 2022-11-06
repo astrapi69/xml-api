@@ -1,8 +1,8 @@
 /**
  * The MIT License
- *
+ * <p>
  * Copyright (C) 2021 Asterios Raptis
- *
+ * <p>
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
  * "Software"), to deal in the Software without restriction, including
@@ -10,10 +10,10 @@
  * distribute, sublicense, and/or sell copies of the Software, and to
  * permit persons to whom the Software is furnished to do so, subject to
  * the following conditions:
- *
+ * <p>
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
- *
+ * <p>
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
@@ -26,20 +26,23 @@ package io.github.astrapi69.xml.api;
 
 import lombok.NonNull;
 
+import java.io.File;
+
 /**
- * If a class implements the interface {@link XmlToGenericObject} can transform a xml file to an
+ * If a class implements the interface {@link XmlFileToGenericObject} can transform a xml file to an
  * object without giving explicitly the class type of the return type
  */
-public interface XmlToGenericObject
+public interface XmlFileToGenericObject
 {
+
 	/**
-	 * Transforms the given xml string to an object of type T
+	 * Transforms the given xml {@link File} object to an object of the given class type
 	 *
 	 * @param <T>
-	 *            the generic type of the return type
-	 * @param xmlString
-	 *            the xml String
+	 *            the generic type of the argument object class type
+	 * @param xmlFile
+	 *            the xml file
 	 * @return the object
 	 */
-	<T> T toObject(final @NonNull String xmlString);
+	<T> T toObject(final @NonNull File xmlFile);
 }

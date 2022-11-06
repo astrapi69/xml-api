@@ -4,6 +4,10 @@
 Version 1.4-SNAPSHOT
 -------------
 
+ADDED:
+
+- new interface XmlFileToGenericObject that can transform a xml file to an object without giving explicitly the class
+  type of the return type
 
 Version 1.3
 -------------
