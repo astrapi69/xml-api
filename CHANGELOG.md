@@ -43,7 +43,8 @@ Version 1.1
 
 ADDED:
 
-- new interface XmlToGenericObject for provide transformation from a xml string to an object without giving explicitly the class type of the return type
+- new interface XmlToGenericObject for provide transformation from a xml string to an object without giving explicitly
+  the class type of the return type
 
 Version 1
 -------------
