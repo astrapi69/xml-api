@@ -27,7 +27,8 @@ package io.github.astrapi69.xml.api;
 import lombok.NonNull;
 
 /**
- * The interface {@link ObjectToXml} provides a single method for convert an object to a xml string
+ * The interface {@link ObjectToXml} provides a single method for convert a java object to a xml
+ * string
  */
 public interface ObjectToXml
 {
@@ -36,9 +37,9 @@ public interface ObjectToXml
 	 *
 	 * @param <T>
 	 *            the generic type of the argument object type
-	 * @param object
-	 *            the object to convert to xml
+	 * @param javaObject
+	 *            the java object to convert to xml
 	 * @return the xml string from the given object
 	 */
-	<T> String toXml(final @NonNull T object);
+	<T> String toXml(final @NonNull T javaObject);
 }

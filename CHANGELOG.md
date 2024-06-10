@@ -6,6 +6,7 @@ Version 2-SNAPSHOT
 
 ADDED:
 
+- new dependency transform-api in new minor version 1.1
 - new libs.versions.toml file for new automatic catalog versions update
 - new spotless directory and created the importorder.properties file
 

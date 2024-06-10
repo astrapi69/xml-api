@@ -29,7 +29,7 @@ import java.io.File;
 import lombok.NonNull;
 
 /**
- * The interface {@link ObjectToXmlFile} provides a single method for convert an object to a xml
+ * The interface {@link ObjectToXmlFile} provides a single method for convert a java object to a xml
  * string
  */
 public interface ObjectToXmlFile
@@ -39,10 +39,10 @@ public interface ObjectToXmlFile
 	 *
 	 * @param <T>
 	 *            the generic type of the argument object type
-	 * @param object
-	 *            the object to convert to xml
+	 * @param javaObject
+	 *            the java object to convert to xml
 	 * @param file
 	 *            the file to copy the object as xml
 	 */
-	<T> void toXml(final @NonNull T object, final @NonNull File file);
+	<T> void toXml(final @NonNull T javaObject, final @NonNull File file);
 }

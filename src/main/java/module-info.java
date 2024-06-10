@@ -21,7 +21,8 @@
 module xml.api.main
 {
 	requires lombok;
+	requires transform.api.main;
 
 	exports io.github.astrapi69.xml.api;
-	exports io.github.astrapi69.xml.api.enumtype;
+	exports io.github.astrapi69.xml.api.enumeration;
 }

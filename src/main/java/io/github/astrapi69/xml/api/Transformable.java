@@ -30,6 +30,8 @@ package io.github.astrapi69.xml.api;
  *
  * @param <T>
  *            the generic type
+ * @deprecated use instead the interface {@link io.github.astrapi69.transform.api.Transformable}
+ *             from the transform-api. Note: will be removed in the next major version
  */
 public interface Transformable<T> extends Xmlable, Objectable
 {

@@ -24,23 +24,26 @@
  */
 package io.github.astrapi69.xml.api;
 
+import io.github.astrapi69.transform.api.ObjectableFromClass;
 import lombok.NonNull;
 
 /**
  * If a class implements the interface {@link XmlToObject} can transform a xml string to an object
+ *
+ * @param <T>
+ *            the generic type of the argument object class type
  */
-public interface XmlToObject
+@FunctionalInterface
+public interface XmlToObject<T> extends ObjectableFromClass<T, String>
 {
 	/**
 	 * Transforms the given xml {@link String} object to an object of the given class type
 	 *
-	 * @param <T>
-	 *            the generic type of the argument object class type
 	 * @param xmlString
 	 *            the xml as {@link String} object
 	 * @param clazz
 	 *            the class from the object that will be returned
 	 * @return the object
 	 */
-	<T> T toObject(final @NonNull String xmlString, final @NonNull Class<T> clazz);
+	T toObject(final @NonNull String xmlString, final @NonNull Class<T> clazz);
 }

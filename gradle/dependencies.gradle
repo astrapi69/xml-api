@@ -2,6 +2,9 @@ dependencies {
 
     compileOnly libs.lombok
     annotationProcessor libs.lombok
+
+    implementation libs.transform.api
+
     testCompileOnly libs.lombok
     testAnnotationProcessor libs.lombok
     // Note: use of bundles...

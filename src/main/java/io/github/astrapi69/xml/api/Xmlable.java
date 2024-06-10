@@ -33,7 +33,7 @@ public interface Xmlable
 	/**
 	 * Transform this object to xml String
 	 *
-	 * @return this object as an xml String object
+	 * @return this object as a xml String object
 	 */
 	String toXml();
 }

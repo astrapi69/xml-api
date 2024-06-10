@@ -8,11 +8,13 @@ gradle-plugin-versions-version = "0.51.0"
 junit-jupiter-version = "5.11.0-M2"
 junit-platform-launcher-version = "1.11.0-M2"
 lombok-version = "1.18.32"
+transform-api-version= "1.1"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter-version" }
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform-launcher-version" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok-version" }
+transform-api = { module = "io.github.astrapi69:transform-api", version.ref = "transform-api-version" }
 
 [bundles]
 unit-testing = [
