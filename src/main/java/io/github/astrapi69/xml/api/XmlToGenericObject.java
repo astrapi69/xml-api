@@ -24,8 +24,8 @@
  */
 package io.github.astrapi69.xml.api;
 
-import lombok.NonNull;
 import io.github.astrapi69.transform.api.Objectable;
+import lombok.NonNull;
 
 /**
  * If a class implements the interface {@link XmlToGenericObject} can transform a xml string to an

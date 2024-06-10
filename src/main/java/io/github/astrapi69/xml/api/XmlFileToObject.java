@@ -30,6 +30,7 @@ import io.github.astrapi69.transform.api.ObjectableFromClass;
 
 /**
  * If a class implements the interface {@link XmlFileToObject} can transform a xml file to an object
+ * 
  * @param <T>
  *            the generic type of the return type
  */
