@@ -35,6 +35,7 @@ import io.github.astrapi69.transform.api.Objectable;
  * @param <T>
  *            the generic type of the return type
  */
+@FunctionalInterface
 public interface XmlFileToGenericObject<T> extends Objectable<T, File>
 {
 }

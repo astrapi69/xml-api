@@ -28,6 +28,7 @@ package io.github.astrapi69.xml.api;
  * If a class implements the interface {@link Xmlable} have to implement the method for
  * transformation to a xml string
  */
+@FunctionalInterface
 public interface Xmlable
 {
 	/**

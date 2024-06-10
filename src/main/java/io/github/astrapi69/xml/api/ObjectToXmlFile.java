@@ -32,6 +32,7 @@ import lombok.NonNull;
  * The interface {@link ObjectToXmlFile} provides a single method for convert a java object to a xml
  * string
  */
+@FunctionalInterface
 public interface ObjectToXmlFile
 {
 	/**
