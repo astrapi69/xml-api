@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 1.5-SNAPSHOT
+Version 2-SNAPSHOT
 -------------
 
 ADDED:
@@ -11,6 +11,7 @@ ADDED:
 
 CHANGED:
 
+- update to jdk version 17
 - update gradle to new version 8.8
 - update of dependency lombok to new version 1.18.32
 - update of gradle-plugin dependency of 'io.freefair.gradle:lombok-plugin' in version 8.6
