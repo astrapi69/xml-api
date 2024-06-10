@@ -1,6 +1,18 @@
 ## Change log
 ----------------------
 
+Version 1.5-SNAPSHOT
+-------------
+
+ADDED:
+
+- new libs.versions.toml file for new automatic catalog versions update
+- new spotless directory and created the importorder.properties file
+
+CHANGED:
+
+- update gradle to new version 8.8
+
 Version 1.4
 -------------
 
