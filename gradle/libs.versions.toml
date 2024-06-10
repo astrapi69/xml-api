@@ -7,7 +7,7 @@ gradle-plugin-version-catalog-update-version = "0.8.4"
 gradle-plugin-versions-version = "0.51.0"
 junit-jupiter-version = "5.11.0-M2"
 junit-platform-launcher-version = "1.11.0-M2"
-lombok-version = "1.18.24"
+lombok-version = "1.18.32"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter-version" }
